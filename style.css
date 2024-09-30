@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vw;
+    font-family: "Fredoka", sans-serif;
+    background-color: transparent;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav h2 img {
+    width: 7vw;
+    height: 5vw;
+}
+
+.nav1 {
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+
+
+}
+
+nav h2 {
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+
+.nav1 h4 {
+    font-size: 1.5vw;
+    font-weight: 600;
+    height: 100%;
+    line-height: 1.5vw;
+
+}
+
+i {
+    font-size: 1.8vw;
+    display: none;
+}
+
+.nav1 button {
+    font-size: 1vw;
+    padding: 0.6vw 1.2vw;
+    background-color: #FF735C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.content {
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.left {
+    height: 100%;
+    width: 55%;
+    padding: 5vw 4vw;
+}
+
+.left h1 {
+    font-size: 4.2vw;
+    line-height: 4.4vw;
+}
+
+.left h1 span {
+    color: #FF735C;
+}
+
+.left p {
+    font-size: 1.2vw;
+    font-weight: 800;
+    color: #666;
+    width: 80%;
+    margin-top: 1.5vw;
+    margin-bottom: 2vw;
+    font-family: "Roboto Slab", serif;
+}
+
+.content button {
+    font-size: 1.2vw;
+    padding: 1.3vw 1vw;
+    background-color: #FF735C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.right {
+    height: 100%;
+    width: 45%;
+
+}
+
+.right img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.nav1 h4:hover {
+
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    color: rgb(196, 29, 218);
+}
+
+
+
+@media (max-width:600px) {
+    nav {
+
+        padding: 0 5vw;
+        height: 60px;
+    }
+
+    nav h2 {
+        font-size: 6vw;
+    }
+
+    .nav1 h4 {
+        font-size: 3vw;
+        display: none;
+        cursor: pointer;
+    }
+
+    i {
+        font-size: 4.5vw;
+        font-weight: 800px;
+        display: block;
+    }
+
+    .nav1 button {
+        display: none;
+    }
+
+    .content {
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        height: 50%;
+        padding: 4vw 6vw;
+    }
+
+    .left h1 {
+        font-size: 10vw;
+        line-height: 11vw;
+    }
+
+    .left p {
+        font-size: 3vw;
+        width: 90%;
+        margin-top: 5vw;
+        margin-bottom: 8vw;
+    }
+
+    .right {
+        width: 100%;
+        height: 50%;
+    }
+
+    .content button {
+        padding: 3vw 6vw;
+        font-size: 3.5vw;
+        border-radius: 3px;
+        font-weight: 600;
+    }
+
+    nav h2 img {
+        height: 10vw;
+        width: 10vw
+    }
+
+}
+
+footer {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Center-align the text vertically */
+    width: 100%;
+    height: 60px;
+    /* Adjust the height to make it more visible */
+    background-color: #0D2436;
+    /* Change to a more prominent color */
+    color: white;
+    /* Ensure the text contrasts with the background */
+    position: relative;
+    /* Keep it relative to the content */
+}
